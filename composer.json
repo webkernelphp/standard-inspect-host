@@ -1,0 +1,36 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "webkernel/standard-inspect-host",
+    "description": "Standard library package to get data about current host.",
+    "type": "webkernel-stdlib",
+    "version": "0.1.0",
+    "license": "EPL-2.0",
+    "require": {
+        "php": ">=8.4"
+    },
+    "autoload": {
+        "files": [
+            "load.standard-inspect-host.functions.php"
+        ],
+        "psr-4": {
+            "Webkernel\\StdInspectHost\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webkernel\\StdInspectHost\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkernel\\StdInspectHost\\Providers\\StdInspectHostServiceProvider"
+            ]
+        },
+        "webkernel": {
+            "package_repo": "git@github.com:webkernelphp/standard-inspect-host.git",
+            "prefix": "standard-inspect-host"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "name": "standard-inspect-host",
+    "private": true,
+    "description": "Standard library package.",
+    "scripts": {
+        "build": "echo \"No frontend build configured yet.\""
+    }
+}
